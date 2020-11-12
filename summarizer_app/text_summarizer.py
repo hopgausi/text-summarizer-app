@@ -1,3 +1,5 @@
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import stopwords
