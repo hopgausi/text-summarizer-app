@@ -1,5 +1,5 @@
 import os
-import django_heroku
+#import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -12,7 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG_VALUE')
 
-ALLOWED_HOSTS = ['summarizerapp.herokuapp.com']
+ALLOWED_HOSTS = ['summarizerapp.herokuapp.com', '12.0.0.1',]
 
 
 # Application definition
@@ -116,4 +116,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
