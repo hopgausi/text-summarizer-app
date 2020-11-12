@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Roboto&display=swap');
+body {
+    font-family: 'Goldman', cursive!important;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 17px;
+}
+
+.showcase {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+}
+
+.show-txt {
+    position: relative;
+    top: 35%;
+}

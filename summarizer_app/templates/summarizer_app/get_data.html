@@ -1,0 +1,14 @@
+{% extends "summarizer_app/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+<form method="post" action='{% url 'summarize' %}'>
+{% csrf_token %}
+ <legend>Paste your text you want to summarize</legend>
+  <div class="form-group">
+    <textarea name="txtdata" id="textdata" class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Text Here"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Summarize</button>
+</form>
+</div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends 'summarizer_app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="showcase" style="background-image: url({% static 'summarizer_app/img/book.jpg' %});">
+<div class="text-center text-white show-txt">
+<h2>Summarize your Text with Summarizer App and get all important concepts without reading the long text.</h2>
+<a class="btn btn-primary" href="{% url 'get_data' %}" role="button">Summarize Your Text</a>
+</div>
+</div>
+{% endblock content %}

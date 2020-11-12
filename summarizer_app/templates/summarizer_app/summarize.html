@@ -1,0 +1,22 @@
+{% extends 'summarizer_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+{% if summarized %}
+<div class="row">
+
+<div class="col-6">
+    <h1 class="underlined">Raw unsummarized Text</h1>
+<p>{{ raw_text }}</p>
+</div>
+
+<div class="col-6">
+    <h1 class="underlined">Summarized text</h1>
+<p>{{ summarized }}</p>
+</div>
+</div>
+{% else %}
+<h1>No previous summaries</h1>
+{% endif %}
+</div>
+{% endblock content %}
